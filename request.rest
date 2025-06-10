@@ -1,0 +1,15 @@
+POST http://localhost:3000/api/services
+content-type: application/json
+
+{
+    "name": "algum serviço",
+    "description": "alguma descriçao",
+    "price": 1400,
+    "image": " https://pixabay.com/pt/images/search/paisagem%20bonita/"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/6848b6a57584462818b6c1b2
