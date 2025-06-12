@@ -13,3 +13,17 @@ GET http://localhost:3000/api/services
 
 ###
 GET http://localhost:3000/api/services/6848b6a57584462818b6c1b2
+###
+
+DELETE  http://localhost:3000/api/services/6848b6a57584462818b6c1b2
+
+###
+PUT  http://localhost:3000/api/services/6848b7697584462818b6c1b6
+content-type: application/json
+
+{
+    "name": "teste atualização",
+    "description": "alguma descriçao",
+    "price": 6000,
+    "image": " https://pixabay.com/pt/images/search/paisagem%20bonita/"
+}
