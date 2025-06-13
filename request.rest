@@ -27,3 +27,77 @@ content-type: application/json
     "price": 6000,
     "image": " https://pixabay.com/pt/images/search/paisagem%20bonita/"
 }
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "meu evento ",
+    "author": "felipe",
+    "description": "uma feSTA de aniversário",
+    "budget": 7000,
+    "image": "https://pixabay.com/pt/images/search/paisagem%20bonita/",
+    "services": [
+        
+        
+        {"name": "algum serviço 1",
+    "description": "alguma descriçao",
+    "price": 3000,
+    "image": " https://pixabay.com/pt/images/search/paisagem%20bonita/"
+        },
+         
+         
+         {"name": "algum serviço 2",
+    "description": "alguma descriçao",
+    "price": 1600,
+    "image": " https://pixabay.com/pt/images/search/paisagem%20bonita/"
+        }
+
+
+
+        ]
+
+}
+
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/684ca6dd4a1284edbcb5af40
+
+###
+DELETE http://localhost:3000/api/parties/684ca6dd4a1284edbcb5af40
+
+###
+PUT http://localhost:3000/api/parties/6848c8aa876999e5c93077ef
+Content-Type: application/json
+
+{
+    "title": "meu evento ",
+    "author": "felipe",
+    "description": "uma feSTA de aniversário",
+    "budget": 1,
+    "image": "https://pixabay.com/pt/images/search/paisagem%20bonita/",
+    "services": [
+        
+        
+        {"name": "algum serviço 1",
+    "description": "alguma descriçao",
+    "price": 3000,
+    "image": " https://pixabay.com/pt/images/search/paisagem%20bonita/"
+        },
+         
+         
+         {"name": "algum serviço 2",
+    "description": "alguma descriçao",
+    "price": 1600,
+    "image": " https://pixabay.com/pt/images/search/paisagem%20bonita/"
+        }
+
+
+
+        ]
+
+}
